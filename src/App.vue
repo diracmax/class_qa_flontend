@@ -1,6 +1,7 @@
 <template>
   <div>
   <my-header></my-header>
+  <router-view />
   </div>
 </template>
 
@@ -14,7 +15,7 @@ export default {
   data () {
     return {
     }
-  }
+  },
 }
 </script>
 
