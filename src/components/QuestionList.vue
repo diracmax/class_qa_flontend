@@ -4,6 +4,7 @@
   </div>
   <div>
     <div v-for="question in questions" v-bind:key="question.id">
+      <router-link :to="{name:'Answers',params:{classId:this.classId, questionId:question.id}}">{{question.content}}</router-link>
       <p>{{question.content}}</p>
     </div>
   </div>
@@ -22,7 +23,6 @@ export default {
   beforeRouteEnter(to, from, next) {
     next(vm => {
       vm.initialize(); // 初期化処理
-      next();
     });
   },
   methods: {
