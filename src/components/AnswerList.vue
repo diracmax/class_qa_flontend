@@ -1,7 +1,5 @@
 <template>
-  <div>
-      回答リストです。
-  </div>
+  <post-form></post-form>
   <div>
     <div v-for="answer in answers" v-bind:key="answer.id">
       <p>{{answer.content}}</p>
@@ -11,7 +9,11 @@
 
 <script>
 import axios from 'axios';
+import PostForm from "./PostForm";
 export default {
+  components: {
+    PostForm
+  },
   name: 'AnswerList',
   props: ["classId","questionId"],
   data() {

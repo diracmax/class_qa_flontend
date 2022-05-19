@@ -1,18 +1,20 @@
 <template>
-  <div>
-      質問リストです。
-  </div>
+  <post-form></post-form>
   <div>
     <div v-for="question in questions" v-bind:key="question.id">
       <router-link :to="{name:'Answers',params:{classId:this.classId, questionId:question.id}}">{{question.content}}</router-link>
-      <p>{{question.content}}</p>
     </div>
   </div>
 </template>
 
 <script>
 import axios from 'axios';
+import PostForm from './PostForm'
+
 export default {
+  components: {
+    PostForm
+  },
   name: 'QuestionList',
   props: ["classId"],
   data() {
