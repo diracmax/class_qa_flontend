@@ -10,7 +10,7 @@
         Taro
       </div>
       <div v-else>
-        Login
+        <router-link :to="{name:'Login'}">Login</router-link>
       </div>
     </div>
   </div>
