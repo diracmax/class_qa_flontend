@@ -59,8 +59,8 @@ export default {
   vertical-align: center;
 }
 .question-content {
-  display: inline-flex; /* 要素をインライン用のflexコンテナとして定義する */
-  justify-content: center;/* flexアイテムの上下中央を指定する */
+  display: inline-flex;
+  justify-content: center;
   align-items: center;
 }
 </style>
