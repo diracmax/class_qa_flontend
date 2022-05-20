@@ -1,11 +1,12 @@
 <template>
   <div>
   <my-header></my-header>
-  <router-view />
+  <router-view class="content" />
   </div>
 </template>
 
 <script>
+import 'normalize.css'
 import MyHeader from './components/MyHeader'
 
 export default {
@@ -20,4 +21,8 @@ export default {
 </script>
 
 <style>
+.content {
+  width: 75%;
+  margin: 2rem auto;
+}
 </style>

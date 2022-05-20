@@ -1,8 +1,14 @@
 <template>
-  <post-form></post-form>
   <div>
-    <div v-for="question in questions" v-bind:key="question.id">
-      <router-link :to="{name:'Answers',params:{classId:this.classId, questionId:question.id}}">{{question.content}}</router-link>
+    <post-form></post-form>
+    <div>
+      <div class="post-content" v-for="question in questions" v-bind:key="question.id">
+        <div class="question-content"><router-link class="question-link" :to="{name:'Answers',params:{classId:this.classId, questionId:question.id}}">{{question.content}}</router-link></div>
+        <div class="created_date">
+          <p>作成日時</p>
+          <p>{{question.created_date}}</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -39,4 +45,22 @@ export default {
 </script>
 
 <style scoped>
+.question-link {
+  display: inline-block;
+}
+.post-content {
+  padding: 1rem;
+  margin: 1rem;
+  border: solid;
+  display: flex;
+  justify-content: space-between;
+}
+.created_date {
+  vertical-align: center;
+}
+.question-content {
+  display: inline-flex; /* 要素をインライン用のflexコンテナとして定義する */
+  justify-content: center;/* flexアイテムの上下中央を指定する */
+  align-items: center;
+}
 </style>

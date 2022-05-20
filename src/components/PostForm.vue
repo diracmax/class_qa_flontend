@@ -1,8 +1,10 @@
 <template>
+  <div>
     <form>
         <textarea v-model="content" cols="30" rows="10"></textarea>
         <button type="submit" @click="doRegister">投稿</button>
     </form>
+  </div>
 </template>
 
 <script>
@@ -21,3 +23,5 @@ export default {
   }
 };
 </script>
+<style scoped>
+</style>
