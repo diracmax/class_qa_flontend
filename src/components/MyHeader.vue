@@ -4,7 +4,7 @@
       <h1>京大理学部物理科学系講義Q&amp;A</h1>
     </div>
     <div class="header-right">
-      <div class="nav-item">
+      <div>
         <router-link :to="{name:'List'}">一覧</router-link>
       </div>
       <div v-if="!(login)">
@@ -41,8 +41,15 @@ export default {
 .header-right {
   display: flex;
 }
-
-.nav-item {
-  vertical-align: middle;
+.question-content {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-right div {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
 }
 </style>
