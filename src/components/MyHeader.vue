@@ -1,6 +1,6 @@
 <template>
   <div class="qa-header">
-    <div>
+    <div class="header-title">
       <h1>京大理学部物理科学系講義Q&amp;A</h1>
     </div>
     <div class="header-right">
@@ -33,9 +33,12 @@ export default {
 </script>
 
 <style scoped>
+div {
+  background-color: #0b4c8f;
+}
 .qa-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .header-right {
@@ -51,5 +54,9 @@ export default {
   justify-content: center;
   align-items: center;
   padding: 0 2rem;
+}
+.header-title {
+  color: white;
+  font-weight: normal;
 }
 </style>

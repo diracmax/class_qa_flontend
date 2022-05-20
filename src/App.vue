@@ -21,6 +21,9 @@ export default {
 </script>
 
 <style>
+body {
+  font-size: 20px;
+}
 .content {
   width: 75%;
   margin: 2rem auto;
