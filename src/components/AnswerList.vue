@@ -1,8 +1,15 @@
 <template>
-  <post-form></post-form>
   <div>
-    <div v-for="answer in answers" v-bind:key="answer.id">
-      <p>{{answer.content}}</p>
+    <post-form></post-form>
+    <div>
+      <div v-for="answer in answers" v-bind:key="answer.id">
+        <div>
+          <p>{{answer.content}}</p>
+        </div>
+        <div>
+          <p>{{answer.created_date}}</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>

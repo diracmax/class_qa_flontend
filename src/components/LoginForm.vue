@@ -34,3 +34,12 @@ export default {
   }
 };
 </script>
+<style scoped>
+label {
+  display: block;
+}
+input {
+  display: block;
+  width: 100%;
+}
+</style>

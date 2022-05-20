@@ -1,4 +1,5 @@
 <template>
+  <div>
     <form>
         <label>ユーザーネーム</label>
         <input type="text" placeholder="username" v-model="user.username" />
@@ -8,6 +9,7 @@
         <input type="password" placeholder="password" v-model="user.re_password" />
         <button type="submit" @click="doRegister">登録</button>
     </form>
+  </div>
 </template>
 
 <script>
