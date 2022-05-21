@@ -1,6 +1,6 @@
 <template>
   <div>
-    <post-form></post-form>
+    <post-form class="post-form"></post-form>
     <div>
       <div class="post-content" v-for="question in questions" v-bind:key="question.id">
         <div class="question-content"><router-link class="question-link" :to="{name:'Answers',params:{classId:this.classId, questionId:question.id}}">{{question.content}}</router-link></div>
@@ -45,6 +45,9 @@ export default {
 </script>
 
 <style scoped>
+p {
+  margin: 0;
+}
 .question-link {
   display: inline-block;
 }
@@ -62,5 +65,8 @@ export default {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+.post-form {
+  margin-bottom: 2rem;
 }
 </style>
