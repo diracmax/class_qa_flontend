@@ -1,6 +1,6 @@
 <template>
   <div>
-  <my-header></my-header>
+  <my-header class="my-header"></my-header>
   <router-view class="content" />
   </div>
 </template>
@@ -21,11 +21,17 @@ export default {
 </script>
 
 <style>
+html {
+  height: 100%;
+}
 body {
   font-size: 20px;
 }
 .content {
   width: 75%;
   margin: 2rem auto;
+}
+.my-header {
+  padding: 1.25rem;
 }
 </style>
