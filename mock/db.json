@@ -3,6 +3,9 @@
       {"id": 1, "name": "物理科学課題演習B3", "semester":"前期"},
       {"id": 2, "name": "量子力学B", "semester":"前期"}
     ],
+    "token": [
+        {"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJrYXplIiwiZXhwIjoxNjUzMDI4NzU5fQ.LDdrMq2LikftZLzf9MIHh96iWq6GpDN-L07EwZudt3I", "token_type": "bearer"}
+    ],
     "questions1": [
         {"id": 1, "content": "実験はどこでするんですか？", "created_date": "2021-01-03"},
         {"id": 2, "content": "BCS理論って難しいですか？", "created_date": "2021-01-01"}

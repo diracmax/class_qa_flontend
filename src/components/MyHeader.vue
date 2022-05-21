@@ -1,20 +1,20 @@
 <template>
   <div class="qa-header">
-    <div>
+    <div class="header-title">
       <h1>京大理学部物理科学系講義Q&amp;A</h1>
     </div>
     <div class="header-right">
       <div>
-        <router-link :to="{name:'List'}">一覧</router-link>
+        <router-link :to="{name:'List'}" class="link-light">一覧</router-link>
       </div>
       <div v-if="!(login)">
-        <router-link :to="{name:'Login'}">ログイン</router-link>
+        <router-link :to="{name:'Login'}" class="link-light">ログイン</router-link>
       </div>
       <div v-if="!(login)">
-        <router-link :to="{name:'Register'}">登録</router-link>
+        <router-link :to="{name:'Register'}" class="link-light">登録</router-link>
       </div>
       <div v-else>
-        <router-link to="">ログアウト</router-link>
+        <router-link to="" class="link-light">ログアウト</router-link>
       </div>
     </div>
   </div>
@@ -33,9 +33,12 @@ export default {
 </script>
 
 <style scoped>
+div {
+  background-color: #0b4c8f;
+}
 .qa-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .header-right {
@@ -51,5 +54,9 @@ export default {
   justify-content: center;
   align-items: center;
   padding: 0 2rem;
+}
+.header-title {
+  color: white;
+  font-weight: normal;
 }
 </style>
