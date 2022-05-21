@@ -1,8 +1,8 @@
 <template>
   <div>
-    <post-form></post-form>
+    <answer-form class="answer-form"></answer-form>
     <div>
-      <div v-for="answer in answers" v-bind:key="answer.id">
+      <div class="answer" v-for="answer in answers" v-bind:key="answer.id">
         <div>
           <p>{{answer.content}}</p>
         </div>
@@ -16,10 +16,10 @@
 
 <script>
 import axios from 'axios';
-import PostForm from "./PostForm";
+import AnswerForm from "./AnswerForm";
 export default {
   components: {
-    PostForm
+    AnswerForm
   },
   name: 'AnswerList',
   props: ["classId","questionId"],
@@ -45,4 +45,13 @@ export default {
 </script>
 
 <style scoped>
+.answer {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid #e7e7e7;
+  margin-bottom: 1rem;
+}
+.answer-form {
+  margin-bottom: 2rem;
+}
 </style>
