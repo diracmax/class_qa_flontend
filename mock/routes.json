@@ -1,5 +1,6 @@
 {
     "/classes/1/questions": "/questions1",
     "/classes/2/questions": "/questions2",
-    "/classes/1/questions/1/answers": "/answers1"
+    "/classes/1/questions/1/answers": "/answers1",
+    "/classes/1/questions/4/answers": "/answers2"
 }

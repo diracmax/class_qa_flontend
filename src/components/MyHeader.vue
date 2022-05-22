@@ -1,7 +1,7 @@
 <template>
   <div class="qa-header">
     <div class="header-title">
-      <h1>京大理学部物理科学系講義Q&amp;A</h1>
+      <h1>大学の講義Q&amp;A</h1>
     </div>
     <div class="header-right">
       <div>
@@ -43,11 +43,6 @@ div {
 
 .header-right {
   display: flex;
-}
-.question-content {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
 }
 .header-right div {
   display: inline-flex;
