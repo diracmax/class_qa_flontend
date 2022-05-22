@@ -2,7 +2,10 @@
   <div>
     <div class="class-content" v-for="c in classes" v-bind:key="c.id">
       <div class="class-name"><router-link class="class-link" :to="{name:'Questions',params:{classId:c.id}}">{{c.name}}</router-link></div>
-      <p>{{c.semester}}</p>
+      <div class="class-semester">
+        <p>{{c.year}}</p>
+        <p>{{c.semester}}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -42,5 +45,11 @@ p {
   border: solid;
   display: flex;
   justify-content: space-between;
+}
+.class-semester {
+  display: flex;
+}
+.class-semester p {
+  padding-right: 1rem;
 }
 </style>
